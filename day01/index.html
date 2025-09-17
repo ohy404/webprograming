@@ -20,18 +20,19 @@
         btnTest.addEventListener('click',()=>{
             if(inputName.value == "ohy"){
                 console.log("이름을 입력하셨습니다.");
+                console.log("안녕하세요 "+inputName.value +"님");
             } 
-            else if(inputName.value == "202258040"){
+            if(inputName.value == "202258040"){
                 console.log("학번을 입력하셨습니다.");
             }
             else if(inputName.value == "Hello")
             {
                 console.log("안녕하세요.");
             }
-            else {
-                console.log("다른 이름을 입력하셨습니다.");
-            } 
-            console.log("click test")
+            else{            
+            console.log("처음보는 손님이시군요");
+            console.log("안녕하세요 "+inputName.value +"님");
+        }
         });
     </script>
 </body>
