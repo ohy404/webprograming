@@ -14,12 +14,25 @@
         console.log("Hello")
         console.log("202258040")
         console.log("ohy")
-        var btnTest = document.createElement("btn-test");
+        var btnTest = document.getElementById("btn-test");
+        var inputName = document.getElementById("input-name");
     
         btnTest.addEventListener('click',()=>{
-            //클릭시 실행
+            if(inputName.value == "ohy"){
+                console.log("이름을 입력하셨습니다.");
+            } 
+            else if(inputName.value == "202258040"){
+                console.log("학번을 입력하셨습니다.");
+            }
+            else if(inputName.value == "Hello")
+            {
+                console.log("안녕하세요.");
+            }
+            else {
+                console.log("다른 이름을 입력하셨습니다.");
+            } 
             console.log("click test")
-        })
+        });
     </script>
 </body>
 </html>

@@ -11,4 +11,4 @@
 - https://ohy404.github.io/webprograming/
 
 #### day01
-- https://ohy404.github.io/webprograming/day01/index.html
+- https://ohy404.github.io/webprograming/day01/
