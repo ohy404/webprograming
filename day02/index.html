@@ -6,27 +6,27 @@
     <title>day02</title>
 </head>
 <body>
-    <h1> 카운트 : 0</h1>
+    <h1 id="counter output"> 카운트 : 0</h1>
     <button id="btn-increase">증가</button>
     <button id="btn-decrease">감소</button>
     <button id="btn-reset">초기화</button>
     <script>
         var counter = 0;
-        var h1 = document.querySelector("h1");
+        var counteroutput = document.getElementById("counter output");
         document.getElementById("btn-increase").addEventListener("click", ()=>{
             console.log("+ btn clicked");
             counter++;
-            h1.textContent = "카운트 : " + counter;
+            counteroutput.textContent = "카운트 : " + counter;
         });
         document.getElementById("btn-decrease").addEventListener("click", ()=>{
             console.log("- btn clicked");
             counter--;
-            h1.textContent = "카운트 : " + counter;
+            counteroutput.textContent = "카운트 : " + counter;
         });
         document.getElementById("btn-reset").addEventListener("click", ()=>{
             console.log("reset btn clicked");
             counter = 0;
-            h1.textContent = "카운트 : " + counter;
+            counteroutput.textContent = "카운트 : " + counter;
         });
     </script>
 </body>
