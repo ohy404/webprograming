@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day02</title>
+</head>
+<body>
+    <h1> 카운트 : 0</h1>
+    <button id="btn-increase">증가</button>
+    <button id="btn-decrease">감소</button>
+    <button id="btn-reset">초기화</button>
+    <script>
+        var counter = 0;
+        var h1 = document.querySelector("h1");
+        document.getElementById("btn-increase").addEventListener("click", ()=>{
+            counter++;
+            h1.textContent = "카운트 : " + counter;
+        });
+        document.getElementById("btn-decrease").addEventListener("click", ()=>{
+            counter--;
+            h1.textContent = "카운트 : " + counter;
+        });
+        document.getElementById("btn-reset").addEventListener("click", ()=>{
+            counter = 0;
+            h1.textContent = "카운트 : " + counter;
+        });
+    </script>
+</body>
+</html>

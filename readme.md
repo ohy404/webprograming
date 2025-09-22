@@ -12,3 +12,5 @@
 
 #### day01
 - https://ohy404.github.io/webprograming/day01/
+#### day02
+- https://ohy404.github.io/webprograming/day02/
