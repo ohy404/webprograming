@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>스피너</h1>
+    <div>
+        <input id = "inp-num" type="number" value="0" />
+        <button id= "btn-ok">확인</button>
+    </div>
+    <p id="output">선택한 번호 : </p>
+    <script>
+        var inpnum = document.getElementById("inp-num");
+
+
+        document.getElementById("btn-ok").addEventListener("click", ()=>{
+            console.log("btn clicked");
+            document.getElementById("output").textContent = "선택한 번호 : " + inpnum.value;
+        });
+    </script>
+</body>
+</html>

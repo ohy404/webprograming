@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day03</title>
+</head>
+<body>
+    <div>
+    <input id="inp-num1" type="number" placeholder="숫자입력1"> <p id="operation">+</p> <input id="inp-num2" type="number" placeholder="숫자입력2"> = <input id="output" placeholder="결과">
+    </div>
+    <div>
+    <button id="btn-cal">계산</button>
+    </div>
+    <div>
+        <button id="btn-add">+</button>
+        <button id="btn-sub">-</button>
+        <button id="btn-mul">*</button>
+        <button id="btn-div">/</button>
+    </div>
+    <script>
+        var btnCal = document.getElementById('btn-cal');
+        var inpNum1 = document.getElementById('inp-num1');
+        var inpNum2 = document.getElementById('inp-num2');
+        var output = document.getElementById('output');
+        var btnAdd = document.getElementById('btn-add');
+        var btnSub = document.getElementById('btn-sub');
+        var btnMul = document.getElementById('btn-mul');
+        var btnDiv = document.getElementById('btn-div');
+        var operation = document.getElementById('operation');
+
+        btnAdd.addEventListener('click', () => {
+            console.log('+ btn clicked');
+            operation.textContent = '+';
+        });
+
+        btnSub.addEventListener('click', () => {
+            console.log('- btn clicked');
+            operation.textContent = '-';
+        });
+
+        btnMul.addEventListener('click', () => {
+            console.log('* btn clicked');
+            operation.textContent = '*';
+        });
+
+        btnDiv.addEventListener('click', () => {
+            console.log('/ btn clicked');
+            operation.textContent = '/';
+        });
+
+        btnCal.addEventListener('click', () => {
+            console.log('cal btn clicked');
+            var num1 = parseFloat(inpNum1.value);
+            var num2 = parseFloat(inpNum2.value);
+            var result;
+            switch (operation.textContent) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+                default:
+                    result = '알 수 없는 연산자';
+            }
+            output.value = result;
+        });
+    </script>
+</body>
+</html>
