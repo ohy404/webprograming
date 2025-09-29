@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day04</title>
+</head>
+<body>
+    
+    <h1>Radio button sample</h1>
+    <div>
+        <input type="radio" name="group-1" id="apple" value="사과" checked/>사과
+    </div>
+    <div>
+        <input type="radio" name="group-1" id="banana" value="바나나" />바나나
+    </div>
+    <div>
+        <input type="radio" name="group-1" id="orange" value="오렌지" />오렌지
+    </div>
+        <button id="btn-checkselect">확인</button>
+    <p>선택한 과일 : <span id="output-result"></span></p>
+    <div>
+        <input type="radio" name="group-2" id="dog" value="강아지" />강아지
+    </div>
+    <div>
+        <input type="radio" name="group-2" id="cat" value="고양이" />고양이
+    </div>
+    <div>
+        <input type="radio" name="group-2" id="hamster" value="햄스터" />햄스터
+    </div>
+        <button id="btn2-checkselect">확인</button>
+    <p>선택한 동물 : <span id="output-result2"></span></p>
+    <script>
+        var btnselect = document.getElementById("btn-checkselect");
+        var radioresult = document.getElementById("output-result");
+        var btnselect2 = document.getElementById("btn2-checkselect");
+        var radioresult2 = document.getElementById("output-result2");
+        btnselect.addEventListener("click", ()=>{
+            const radioResult = document.querySelector('input[name="group-1"]:checked');
+            radioresult.innerText = radioResult ? radioResult.value : "없음"; 
+        })
+        btnselect2.addEventListener("click", ()=>{
+            const radioResult2 = document.querySelector('input[name="group-2"]:checked');
+            radioresult2.innerText = radioResult2 ? radioResult2.value : "없음"; 
+        })
+    </script>
+</body>
+</html>
