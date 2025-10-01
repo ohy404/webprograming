@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day05 ex03</title>
+</head>
+<body>
+    <h1>볼륨 조절기</h1>
+    <div>
+        <input type="range" id="volume" min="0" max="100" value="50">
+        <button id="btn-volume">확인</button>
+        <br>
+        <p>
+            현재 볼륨: <span id="volume-value">50</span><br>
+            선택한 볼륨 : <span id="selected-volume">50</span>
+        </p>
+    </div>
+    <script>
+        var volumeSlider = document.getElementById("volume");
+        var volumeValue = document.getElementById("volume-value");
+        var selectedVolume = document.getElementById("selected-volume");
+        var btnVolume = document.getElementById("btn-volume");
+
+        btnVolume.addEventListener("click", () => {
+            console.log(volumeSlider.value);
+            selectedVolume.innerText = volumeSlider.value;
+        });
+        volumeSlider.addEventListener("change", () => {
+            console.log(volumeSlider.value);
+            volumeValue.innerText = volumeSlider.value;
+        });
+        volumeSlider.addEventListener("input", () => {
+            volumeValue.innerText = volumeSlider.value;
+        });
+    </script>
+</body>
+</html>

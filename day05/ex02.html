@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day05 ex02</title>
+</head>
+<body>
+    <h1>가고 싶은 도시를 선택</h1>
+    <div>
+        <select id="city">
+            <option value="seoul">서울</option>
+            <option value="busan">부산</option>
+            <option value="jeonju" selected>전주</option>
+            <option value="jeju">제주</option>
+            <option value="gwangju">광주</option>
+        </select>
+    </div>
+    <p id="text-result"></p>
+    <button id="btn_select">확인</button>
+    <script>
+        var city = document.getElementById("city");
+        var btnselect = document.getElementById("btn_select");
+        var textresult = document.getElementById("text-result");
+
+        btnselect.addEventListener("click", ()=>{
+            console.log(city.value);
+            if(city.value == "seoul"){
+                textresult.innerText = "서울을 선택했습니다.";
+            } 
+            else if(city.value == "busan"){
+                textresult.innerText = "부산을 선택했습니다.";
+            }
+            else if(city.value == "jeonju"){
+                textresult.innerText = "전주를 선택했습니다.";
+            }
+            else if(city.value == "jeju"){
+                textresult.innerText = "제주를 선택했습니다.";
+            }
+            else if(city.value == "gwangju"){
+                textresult.innerText = "광주를 선택했습니다.";
+            }
+        });
+    </script>
+</body>
+</html>
