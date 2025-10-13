@@ -23,3 +23,7 @@
 - https://ohy404.github.io/webprograming/day05/ex01.html
 - https://ohy404.github.io/webprograming/day05/ex02.html
 - https://ohy404.github.io/webprograming/day05/ex03.html
+#### day06
+- https://ohy404.github.io/webprograming/day06/ex01.html
+- https://ohy404.github.io/webprograming/day06/ex02.html
+- https://ohy404.github.io/webprograming/day06/ex03.html
