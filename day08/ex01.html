@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>카운터</h1>
+    <p>0</p>
+    <div>
+    <button id ="plus">+</button>
+    <button id ="minus">-</button>
+    <button id ="reset">reset</button>
+    </div>
+    <script>
+        var plusbtn = document.getElementById("plus");
+        var minusebtn = document.getElementById("minus");
+        var resetbtn = document.getElementById("reset");
+        var counter = 0;
+        plusbtn.onclick = function() {
+            counter++;
+            console.log(counter)
+            document.querySelector("p").innerText = counter;
+        }
+        minusebtn.onclick = function() {
+            counter--;
+            console.log(counter)
+            document.querySelector("p").innerText = counter;
+        }
+        resetbtn.onclick = function() {
+            counter = 0;
+            console.log(counter)
+            document.querySelector("p").innerText = counter;
+        }
+    </script>
+</body>
+</html>
