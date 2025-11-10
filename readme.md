@@ -43,3 +43,5 @@
 - https://ohy404.github.io/webprograming/day10/ex04.html
 #### day11
 - https://ohy404.github.io/webprograming/day11/ex01/index.html
+#### day12
+- https://ohy404.github.io/webprograming/day12/ex01/index.html

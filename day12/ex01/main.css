@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    background-color: blue;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'RoundedFixedsys', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+@font-face {
+    font-family: 'RoundedFixedsys';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+.wrapper {
+  perspective: 500px;
+  padding: 0px;
+}
+.big_text{
+    font-size: 64px;
+    margin: 20px;
+    transform: rotateX(-45deg);
+}
+.mid_text{
+    font-size: 32px;
+    margin: 5px;
+}
+.small_text{
+    align-items: flex-start;
+    justify-content: end;
+    flex-direction: column;
+    font-size: 8px;
+    margin: 20px;
+}
+.version{
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+    font-size: 10px;
+    z-index: 1000;
+}
+.copy{
+    position: fixed;
+    bottom: 10px;
+    left: 12px;
+    margin: 0;
+    font-size: 10px;
+    z-index: 1000;
+}
