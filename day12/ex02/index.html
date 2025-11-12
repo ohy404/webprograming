@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('./main.css');
+    </style>
+</head>
+<body>
+    <header>version 1.0</header>
+    <main>
+        <div class="wrapper">
+            <div class="title">던전 앤 드라곤</div>
+        </div>
+        <div class="menu_text" data-action="start">모험시작</div>
+        <div class="menu_text" data-action="load">기억하기</div>
+        <div class="menu_text" data-action="option">옵션</div>
+        <div class="menu_text" data-action="leave" onclick="history.back();">떠나기</div>
+    </main>
+        <footer>Pasteleft</footer>
+    <script>
+        import main from './main.js';
+        main();
+    </script>
+
+</body>
+</html>
