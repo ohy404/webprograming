@@ -44,10 +44,3 @@ footer{
     font-size: 32px;
     margin: 5px;
 }
-.selected{
-    background-color: black;
-    color : white;
-}
-.hide{
-    display: none;
-}

@@ -10,27 +10,18 @@
 </head>
 <body>
     <header>version 1.0</header>
-    <main id="main-menu">
+    <main>
         <div class="wrapper">
             <div class="title">던전 앤 드라곤</div>
         </div>
         <div class="menu_text" data-action="start">모험시작</div>
         <div class="menu_text" data-action="load">기억하기</div>
         <div class="menu_text" data-action="option">옵션</div>
-        <div class="menu_text" data-action="credit">창조자</div>
         <div class="menu_text" data-action="leave" onclick="history.back();">떠나기</div>
     </main>
-    <main id="credit-menu" class="hide">
-        <div class="wrapper">
-            <div class="title">창조자</div>
-        </div>
-        <div class="credit-item">OHY</div>
-        <div class="credit-item" data-action="back">뒤로가기</div>
-
-    </main>
         <footer>Pasteleft</footer>
-    <script type="module">
-        import main from './index.js';
+    <script>
+        import main from './main.js';
         main();
     </script>
 
