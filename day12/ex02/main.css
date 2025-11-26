@@ -40,7 +40,7 @@ footer{
     margin: 20px;
     transform: rotateX(-45deg);
 }
-.menu_text{
+.menu_text, .option_item, .credit_item{
     font-size: 32px;
     margin: 5px;
 }
